@@ -96,7 +96,7 @@ export const ErrorMessageText = styled.p`
   font-size: 17px;
 `;
 
-export const SubmitButton = styled.button`
+export const LogInButton = styled.button`
   height: 40px;
   background-color: #a3c6c4;
   border-radius: 2px;

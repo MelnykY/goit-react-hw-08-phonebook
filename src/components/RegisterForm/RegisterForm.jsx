@@ -10,7 +10,7 @@ import {
   Text,
   Input,
   FormBox,
-  SubmitButton,
+  LogInButton,
   Title,
 } from './RegisterForm.styled';
 
@@ -45,39 +45,31 @@ const RegisterForm = () => {
         validationSchema={userSchema}
       >
         <FormBox autoComplete="off">
-         <Title>SIGN UP</Title>
-     
-              <Label>
-                <Text>NAME</Text>
-                <Input
-                  placeholder="Please enter a name"
-                  type="text"
-                  name="name"
-                />
-                <ErrorMessage component={ErrorMessageText} name="name" />
-              </Label>
-        
-              <Label>
-                <Text>EMAIL</Text>
-                <Input
-                  placeholder="Please enter email address"
-                  type="text"
-                  name="email"
-                />
-                <ErrorMessage component={ErrorMessageText} name="email" />
-              </Label>
-    
-              <Label>
-                <Text>PASSWORD</Text>
-                <Input
-                  placeholder="Please enter password"
-                  type="password"
-                  name="password"
-                />
-                <ErrorMessage component={ErrorMessageText} name="password" />
-              </Label>
-       
-          <SubmitButton type="submit">SUBMIT</SubmitButton>
+          <Title>SIGN UP</Title>
+          <Label>
+            <Text>NAME</Text>
+            <Input placeholder="Please enter a name" type="text" name="name" />
+            <ErrorMessage component={ErrorMessageText} name="name" />
+          </Label>
+          <Label>
+            <Text>EMAIL</Text>
+            <Input
+              placeholder="Please enter email address"
+              type="text"
+              name="email"
+            />
+            <ErrorMessage component={ErrorMessageText} name="email" />
+          </Label>
+          <Label>
+            <Text>PASSWORD</Text>
+            <Input
+              placeholder="Please enter password"
+              type="password"
+              name="password"
+            />
+            <ErrorMessage component={ErrorMessageText} name="password" />
+          </Label>
+          <LogInButton type="submit">SUBMIT</LogInButton>
         </FormBox>
       </Formik>
     </Container>
