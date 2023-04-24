@@ -49,7 +49,11 @@ export const Home = () => {
     <>
       <Section margin="calc(10%) 0 0 0">
         <Title size="30px" margin="0 0 20px 0" position="center">
-          WELCOME to the <br />
+          ...this is NOT a search engine...
+          <br />
+          ...this is a FIND PHONE NUMBER engine:) <br />
+          <br /> Just manage your contacts easily with our
+          <br />
           <b>
             {' '}
             PHONEBOOK{' '}
@@ -58,18 +62,17 @@ export const Home = () => {
               style={{ color: '#6c7a89' }}
             />
           </b>{' '}
-          <br /> Contacts manager
         </Title>
       </Section>
       {!isLoggedIn ? (
         <Box>
           <Text>
-            Please <Link to="/login">log in</Link> to your account to view your
+            You need to be <Link to="/login">logged in</Link> to your account to view your
             contacts.
           </Text>
           <Text>
             If you are not registered yet, please{' '}
-            <Link to="/register">register</Link>
+            <Link to="/register">sing up</Link>
           </Text>
         </Box>
       ) : (
