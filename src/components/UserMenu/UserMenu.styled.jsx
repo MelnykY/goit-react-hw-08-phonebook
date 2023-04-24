@@ -25,4 +25,5 @@ export const Button = styled.button`
   background: #e0e7e9;
   font-size: 20px;
   font-weight: 700;
+  text-decoration: underline;
 `;
