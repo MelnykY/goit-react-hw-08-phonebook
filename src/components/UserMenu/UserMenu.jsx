@@ -3,7 +3,7 @@ import { logOut } from 'redux/auth/operations';
 import { useAuth } from 'hooks/useAuth';
 import { UserName, Wrapper, Button } from './UserMenu.styled';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAddressBook } from '@fortawesome/free-solid-svg-icons';
+import { faRightFromBracket } from '@fortawesome/free-solid-svg-icons';
 
 const UserMenu = () => {
   const dispatch = useDispatch();
