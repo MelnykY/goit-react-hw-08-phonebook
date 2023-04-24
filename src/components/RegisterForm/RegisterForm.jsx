@@ -2,7 +2,6 @@ import { useDispatch } from 'react-redux';
 import { ErrorMessage, Formik } from 'formik';
 import { object, string } from 'yup';
 import { register } from 'redux/auth/operations';
-
 import {
   ErrorMessageText,
   Container,
@@ -26,10 +25,12 @@ const userSchema = object({
     .min(2, 'Too Short!')
     .max(25, 'Too Long!'),
   email: string().email('Invalid email').required('Email is required'),
-  password: string().required('Password is required'),
+  password: string().required(
+    'Your password must be at least 8 characters long, 1 number & 1 symbol, 1 uppercase & 1 lowercase character.'
+  ),
 });
 
-const RegisterForm = () => {
+export const RegisterForm = () => {
   const dispatch = useDispatch();
 
   const handleSubmit = ({ name, email, password }, { resetForm }) => {
@@ -75,5 +76,3 @@ const RegisterForm = () => {
     </Container>
   );
 };
-
-export default RegisterForm;

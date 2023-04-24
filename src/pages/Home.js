@@ -42,7 +42,7 @@ const Title = styled.h1`
   color: #6c7a89;
 `;
 
-export const Home = () => {
+const Home = () => {
   const { isLoggedIn } = useAuth();
 
   return (

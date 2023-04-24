@@ -4,7 +4,7 @@ import { deleteContact } from '../../redux/contacts/operations';
 
 import { ListElem, Text, Button } from './ElementContact.styled';
 
-const ElementContact = ({ contactName, contactNumber, contactId }) => {
+export const ElementContact = ({ contactName, contactNumber, contactId }) => {
   const dispatch = useDispatch();
   const handleDelete = eId => dispatch(deleteContact(eId));
   return (
@@ -24,5 +24,3 @@ ElementContact.propTypes = {
   contactNumber: PropTypes.string.isRequired,
   contactId: PropTypes.string.isRequired,
 };
-
-export default ElementContact;

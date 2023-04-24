@@ -5,10 +5,9 @@ import { UserName, Wrapper, Button } from './UserMenu.styled';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faRightFromBracket } from '@fortawesome/free-solid-svg-icons';
 
-const UserMenu = () => {
+export const UserMenu = () => {
   const dispatch = useDispatch();
   const { user } = useAuth();
-
   const onLogOut = () => {
     dispatch(logOut());
   };
@@ -26,5 +25,3 @@ const UserMenu = () => {
     </Wrapper>
   );
 };
-
-export default UserMenu;

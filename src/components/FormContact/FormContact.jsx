@@ -30,7 +30,7 @@ const userSchema = object({
     .required(),
 });
 
-const FormContact = ({ onSubmit }) => {
+export const FormContact = ({ onSubmit }) => {
   function handleSubmit({ name, number }, { resetForm }) {
     onSubmit(name, number);
     resetForm();
@@ -66,5 +66,3 @@ const FormContact = ({ onSubmit }) => {
 FormContact.propTypes = {
   onSubmit: PropTypes.func.isRequired,
 };
-
-export default FormContact;

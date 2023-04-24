@@ -1,7 +1,7 @@
 import { useAuth } from 'hooks/useAuth';
 import { Nav, Link } from './Navigation.styled';
 
-const Navigation = () => {
+export const Navigation = () => {
   const { isLoggedIn } = useAuth();
 
   return (
@@ -12,4 +12,4 @@ const Navigation = () => {
   );
 };
 
-export default Navigation;
+

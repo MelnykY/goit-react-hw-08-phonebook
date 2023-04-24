@@ -1,6 +1,6 @@
 import { AuthLink, Wrapper } from './AuthNav.styled';
 
-const AuthNav = () => {
+export const AuthNav = () => {
   return (
     <Wrapper>
       <AuthLink to="/register">Register</AuthLink>
@@ -8,5 +8,3 @@ const AuthNav = () => {
     </Wrapper>
   );
 };
-
-export default AuthNav;

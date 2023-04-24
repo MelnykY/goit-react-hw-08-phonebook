@@ -1,9 +1,8 @@
 import { useDispatch } from 'react-redux';
 import { filterContacts } from '../../redux/filter/slice';
-
 import { Label, Input } from './SearchFilter.styled';
 
-const SearchFilter = () => {
+export const SearchFilter = () => {
   const dispatch = useDispatch();
 
   const handleFilter = ({ target: { value } }) => {
@@ -15,5 +14,3 @@ const SearchFilter = () => {
     </Label>
   );
 };
-
-export default SearchFilter;

@@ -1,10 +1,9 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { addContact, fetchContacts } from 'redux/contacts/operations';
-
-import FormContact from 'components/FormContact';
-import ListContact from 'components/ListContact';
-import SearchFilter from 'components/SearchFilter';
+import { FormContact } from 'components/FormContact/FormContact';
+import { ListContact } from 'components/ListContact/ListContact';
+import { SearchFilter } from 'components/SearchFilter/SearchFilter';
 import { Message, Title, Wrapper, Text } from './ContactsBar.styled';
 import {
   selectContacts,
@@ -12,7 +11,7 @@ import {
   selectError,
 } from '../../redux/contacts/selectors';
 
-const ContactsBar = () => {
+export const ContactsBar = () => {
   const dispatch = useDispatch();
   const allContacts = useSelector(selectContacts);
   const isLoading = useSelector(selectIsLoading);
@@ -57,5 +56,3 @@ const ContactsBar = () => {
     </Wrapper>
   );
 };
-
-export default ContactsBar;

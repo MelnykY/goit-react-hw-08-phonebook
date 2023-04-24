@@ -1,5 +1,5 @@
 import { Helmet } from 'react-helmet';
-import ContactsBar from 'components/ContactsBar';
+import { ContactsBar } from 'components/ContactsBar/ContactsBar';
 import { useAuth } from 'hooks';
 
 const Contacts = () => {

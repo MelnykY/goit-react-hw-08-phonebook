@@ -1,8 +1,8 @@
 import { Suspense } from 'react';
 import { Outlet } from 'react-router-dom';
-import AppBar from 'components/AppBar';
+import { AppBar } from 'components/AppBar/AppBar';
 
-const Layout = () => {
+export const Layout = () => {
   return (
     <>
       <AppBar />
@@ -12,5 +12,3 @@ const Layout = () => {
     </>
   );
 };
-
-export default Layout;

@@ -1,12 +1,10 @@
 import { useSelector } from 'react-redux';
-
 import { selectFilter } from '../../redux/filter/selectors';
 import { selectContacts } from '../../redux/contacts/selectors';
-
 import { List } from './ListContact.styled';
-import ElementContact from '../ElementContact';
+import { ElementContact } from '../ElementContact/ElementContact';
 
-const ListContact = () => {
+export const ListContact = () => {
   const contacts = useSelector(selectContacts);
   const filter = useSelector(selectFilter);
 
@@ -30,5 +28,3 @@ const ListContact = () => {
   };
   return <List>{makeList(makeFiltredContacts())}</List>;
 };
-
-export default ListContact;

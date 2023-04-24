@@ -2,7 +2,6 @@ import { useDispatch } from 'react-redux';
 import { logIn } from 'redux/auth/operations';
 import { ErrorMessage, Formik } from 'formik';
 import { object, string } from 'yup';
-
 import {
   ErrorMessageText,
   Container,
@@ -24,7 +23,7 @@ const userSchema = object({
   password: string().required('Password is required'),
 });
 
-const LoginForm = () => {
+export const LoginForm = () => {
   const dispatch = useDispatch();
 
   const handleSubmit = ({ email, password }, { resetForm }) => {
@@ -68,5 +67,3 @@ const LoginForm = () => {
     </Container>
   );
 };
-
-export default LoginForm;
