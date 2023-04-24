@@ -17,7 +17,11 @@ const UserMenu = () => {
     <Wrapper>
       <UserName>Welcome, {user.name}</UserName>
       <Button type="button" onClick={onLogOut}>
-        <FontAwesomeIcon icon={faRightFromBracket} style={{ color: '#a3c6c4' }} />
+        {' '}
+        <FontAwesomeIcon
+          icon={faRightFromBracket}
+          style={{ color: '#a3c6c4' }}
+        />{' '}
       </Button>
     </Wrapper>
   );
